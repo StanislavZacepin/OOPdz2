@@ -6,5 +6,5 @@ public class Cats extends EnityName {
         super(name);
         this.mood = mood;
     }
-    private Mood mood;
+    public Mood mood;
 }
