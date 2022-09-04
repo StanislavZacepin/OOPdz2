@@ -2,7 +2,7 @@ package Entity;
 
 public interface Communication {
 
-    default void relationships(Cats cats, Person person) {
+     default void relationships(Person person,Cats cats) {
         if (person.getMood() == Mood.love) {
             person.setVois("Кс-кс-кс, маленький компок шерсти");
         }
@@ -29,14 +29,13 @@ public interface Communication {
             cats.setVois("игнор");
         }
 
-
     }
 
 
-    boolean creatRelationships(EnityName entity);
+    boolean creatRelationships(Person person,Cats cats);
 
-    default void bind(EnityName entity) {
-        boolean flag = creatRelationships(entity);
+    default void bind(Person person,Cats cats) {
+        boolean flag = creatRelationships(person,cats);
         if (flag) {
             System.out.println("Хорошие взаиотношения");
         } else {

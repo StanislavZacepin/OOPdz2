@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c987a322-f3b6-484a-97d6-73e426628e94" name="Changes" comment="Действия зов и реакция">
-      <change afterPath="$PROJECT_DIR$/src/Entity/Communication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c987a322-f3b6-484a-97d6-73e426628e94" name="Changes" comment="Добавления присваивания голоса . рефакторинг кода. добавления инрфейса">
       <change beforePath="$PROJECT_DIR$/src/Entity/Cats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Cats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/EnityName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/EnityName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Communication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Communication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -58,6 +57,14 @@
       <option name="presentableId" value="Default" />
       <updated>1662047909184</updated>
     </task>
+    <task id="LOCAL-00001" summary="Добавления присваивания голоса . рефакторинг кода. добавления инрфейса">
+      <created>1662315217324</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662315217324</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -70,5 +77,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Добавления присваивания голоса . рефакторинг кода. добавления инрфейса" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавления присваивания голоса . рефакторинг кода. добавления инрфейса" />
   </component>
 </project>
