@@ -9,14 +9,7 @@ public class Person extends EnityName {
 
 
     @Override
-    public boolean creatRelationships(Person person, Cats cats) {
-        if (person.getMood() == Mood.love && cats.getMood() == Mood.love){
-            System.out.println(person.getVois());
-            System.out.println(cats.getVois());
-            return true;
-        }
-        System.out.println(person.getVois());
-        System.out.println(cats.getVois());
-        return false;
+    public void sayYourName() {
+        System.out.println(this.getName());
     }
 }

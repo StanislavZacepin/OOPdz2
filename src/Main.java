@@ -1,6 +1,8 @@
-import Entity.Cats;
-import Entity.Mood;
-import Entity.Person;
+import Entity.*;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,14 +17,28 @@ public class Main {
         Cats tom = new Cats("tom", Mood.hate);
         Cats mursik = new Cats("mursik", Mood.aggressive);
 
-        ivan.relationships(ivan,barsic);
-        ivan.relationships(ira,vaska);
-        ivan.relationships(dima,tom);
-        ivan.relationships(vadik,mursik);
+        List<Person> personList = Arrays.asList(ivan,ira,dima,vadik);
+        List<Cats> catsList = Arrays.asList(barsic,vaska,tom,mursik);
 
-        ivan.bind(ivan,barsic);
-        ivan.bind(ira,vaska);
-        ivan.bind(dima,tom);
-        ivan.bind(vadik,mursik);
+        for (Person person : personList) {
+            person.sayYourName();
+        }
+        for (Cats cats : catsList) {
+            cats.sayYourName();
+        }
+
+        for (Person person : personList) {
+            for (Cats cats : catsList) {
+                CreateVois.Create(person,cats);
+            }
+        }
+        for (Person person : personList) {
+            for (Cats cats : catsList) {
+                Bind.bind(person,cats);
+            }
+        }
+
+
+
     }
 }

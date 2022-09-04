@@ -8,7 +8,7 @@ public class Cats extends EnityName {
 
 
     @Override
-    public boolean creatRelationships(Person person,Cats cats) {
-        return false;
+    public void sayYourName() {
+        System.out.println(this.getName());
     }
 }
