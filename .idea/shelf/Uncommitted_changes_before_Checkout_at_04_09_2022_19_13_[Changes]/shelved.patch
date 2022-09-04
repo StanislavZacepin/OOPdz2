@@ -1,0 +1,85 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -4,9 +4,10 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="c987a322-f3b6-484a-97d6-73e426628e94" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/src/Action/Call.java" afterDir="false" />
++    <list default="true" id="c987a322-f3b6-484a-97d6-73e426628e94" name="Changes" comment="Действия зов и реакция">
++      <change afterPath="$PROJECT_DIR$/src/View/Print.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Action/Call.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Action/Call.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -54,6 +55,14 @@
+       <option name="presentableId" value="Default" />
+       <updated>1662047909184</updated>
+     </task>
++    <task id="LOCAL-00001" summary="Действия зов и реакция">
++      <created>1662050893145</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1662050893145</updated>
++    </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -69,6 +78,7 @@
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Подготовка" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Подготовка" />
++    <MESSAGE value="Действия зов и реакция" />
++    <option name="LAST_COMMIT_MESSAGE" value="Действия зов и реакция" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: src/Action/Call.java
+===================================================================
+diff --git a/src/Action/Call.java b/src/Action/Call.java
+--- a/src/Action/Call.java	
++++ b/src/Action/Call.java	
+@@ -3,24 +3,25 @@
+ import Entity.Cats;
+ import Entity.Mood;
+ import Entity.Person;
++import View.Print;
+ 
+ public class Call {
+     public void reaction(Person hum, Cats cat){
+         if(cat.mood == Mood.love)
+-            System.out.println(cat + " Мурлыкает и подходит");
++            new Print(cat , " Мурлыкает и подходит");
+         if(cat.mood == Mood.aggressive)
+-            System.out.println(cat + " Бросаеться на ноги");
++            new Print(cat , " Бросаеться на ноги");
+         if(cat.mood == Mood.hate)
+-            System.out.println(cat + " Шыпит и убегает");
++            new Print(cat , " Шыпит и убегает");
+         if(cat.mood == Mood.nonMoral)
+-            System.out.println(cat + " Игнорирует");
++            new Print(cat , " Игнорирует");
+         if(hum.mood == Mood.love)
+-            System.out.println(hum + " Всё равно пытаеться погладить");
++            new Print(hum , " Всё равно пытаеться погладить");
+         if(hum.mood == Mood.aggressive)
+-            System.out.println(hum + " Кидает тапком");
++            new Print(hum , " Кидает тапком");
+         if(hum.mood == Mood.hate)
+-            System.out.println(hum + " Говорит: Брысь");
++            new Print(hum , " Говорит: Брысь");
+         if(hum.mood == Mood.nonMoral)
+-            System.out.println(hum + " Забил пошёл к холодельнику");
++            new Print(hum , " Забил пошёл к холодельнику");
+     }
+ }

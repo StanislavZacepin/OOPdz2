@@ -1,10 +1,14 @@
 package Entity;
 
 public class Cats extends EnityName {
-
-    public Cats(String name , Mood mood) {
-        super(name);
-        this.mood = mood;
-    }
     private Mood mood;
+    public Cats(String name , Mood mood) {
+        super(name,mood);
+    }
+
+
+    @Override
+    public boolean creatRelationships(EnityName entity) {
+        return false;
+    }
 }

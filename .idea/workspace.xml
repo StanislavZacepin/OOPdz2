@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c987a322-f3b6-484a-97d6-73e426628e94" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Entity/Cats.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/EnityName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Mood.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="c987a322-f3b6-484a-97d6-73e426628e94" name="Changes" comment="Действия зов и реакция">
+      <change afterPath="$PROJECT_DIR$/src/Entity/Communication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Cats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Cats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/EnityName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/EnityName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,10 +21,16 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -41,7 +46,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/777/IdeaProjects/GeoWithResearch"
+    "last_opened_file_path": "C:/Users/777/IdeaProjects/OOPDz3"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

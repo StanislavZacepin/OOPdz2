@@ -1,0 +1,22 @@
+Index: src/View/Print.java
+===================================================================
+diff --git a/src/View/Print.java b/src/View/Print.java
+new file mode 100644
+--- /dev/null	
++++ b/src/View/Print.java	
+@@ -0,0 +1,15 @@
++package View;
++
++import Entity.Cats;
++import Entity.Person;
++
++public class Print {
++
++    public Print(Person hum, String txt){
++        System.out.println(hum+" "+txt);
++    }
++    public Print(Cats cat, String txt){
++        System.out.println(cat+" "+txt);
++    }
++
++}
